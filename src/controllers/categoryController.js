@@ -58,9 +58,63 @@ const createSubCategory = async (req, res) => {
   }
 };
 
+const updateCategory = async (req, res) => {
+  try {
+    const category = await categoryService.updateCategory(
+      req.params.id,
+      req.body.name
+    );
+
+    res.status(200).json(category);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+const deleteCategory = async (req, res) => {
+  try {
+    await categoryService.deleteCategory(req.params.id);
+
+    res.status(200).json({
+      message: "Category deleted successfully",
+    });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+const updateSubCategory = async (req, res) => {
+  try {
+    const subCategory = await categoryService.updateSubCategory(
+      req.params.id,
+      req.body.name
+    );
+
+    res.status(200).json(subCategory);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+const deleteSubCategory = async (req, res) => {
+  try {
+    await categoryService.deleteSubCategory(req.params.id);
+
+    res.status(200).json({
+      message: "Sub-category deleted successfully",
+    });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
 module.exports = {
   getAllCategories,
   getSubCategoriesByCategory,
   createCategory,
   createSubCategory,
+  updateCategory,
+  deleteCategory,
+  updateSubCategory,
+  deleteSubCategory
 };

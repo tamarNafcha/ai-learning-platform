@@ -20,9 +20,37 @@ const createSubCategory = async (name, categoryId) => {
   });
 };
 
+const updateCategory = async (id, name) => {
+  return await Category.findByIdAndUpdate(
+    id,
+    { name },
+    { new: true }
+  );
+};
+
+const deleteCategory = async (id) => {
+  return await Category.findByIdAndDelete(id);
+};
+
+const updateSubCategory = async (id, name) => {
+  return await SubCategory.findByIdAndUpdate(
+    id,
+    { name },
+    { new: true }
+  );
+};
+
+const deleteSubCategory = async (id) => {
+  return await SubCategory.findByIdAndDelete(id);
+};
+
 module.exports = {
   getAllCategories,
   getSubCategoriesByCategory,
   createCategory,
   createSubCategory,
+  updateCategory,
+  deleteCategory,
+  updateSubCategory,
+  deleteSubCategory
 };
