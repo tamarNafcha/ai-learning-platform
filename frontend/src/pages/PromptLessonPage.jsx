@@ -6,4 +6,4 @@ function PromptLessonPage() {
   );
 }
 
-export default HomePage;
+export default PromptLessonPage;

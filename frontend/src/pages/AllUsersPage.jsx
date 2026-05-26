@@ -6,4 +6,4 @@ function AllUsersPage() {
   );
 }
 
-export default HomePage;
+export default AllUsersPage;

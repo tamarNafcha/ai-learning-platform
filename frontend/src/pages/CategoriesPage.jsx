@@ -6,4 +6,4 @@ function CategoriesPage() {
   );
 }
 
-export default HomePage;
+export default CategoriesPage;

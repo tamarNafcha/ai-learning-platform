@@ -6,4 +6,4 @@ function HistoryPage() {
   );
 }
 
-export default HomePage;
+export default HistoryPage;

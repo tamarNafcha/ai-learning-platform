@@ -6,4 +6,4 @@ function CreateSubCategoryPage() {
   );
 }
 
-export default HomePage;
+export default CreateSubCategoryPage;

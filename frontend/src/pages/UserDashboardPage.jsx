@@ -6,4 +6,4 @@ function UserDashboardPage() {
   );
 }
 
-export default HomePage;
+export default UserDashboardPage;

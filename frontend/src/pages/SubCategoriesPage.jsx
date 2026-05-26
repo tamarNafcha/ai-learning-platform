@@ -6,4 +6,4 @@ function SubCategoriesPage() {
   );
 }
 
-export default HomePage;
+export default SubCategoriesPage;

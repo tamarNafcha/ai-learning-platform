@@ -6,4 +6,4 @@ function AllPromptsPage() {
   );
 }
 
-export default HomePage;
+export default AllPromptsPage;

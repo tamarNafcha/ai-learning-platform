@@ -6,4 +6,4 @@ function CreateCategoryPage() {
   );
 }
 
-export default HomePage;
+export default CreateCategoryPage;
