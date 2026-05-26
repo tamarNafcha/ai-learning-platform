@@ -1,0 +1,63 @@
+.admin-form-page {
+  min-height: 100vh;
+  padding: 40px 8%;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(91, 127, 151, 0.24), transparent 30%),
+    linear-gradient(135deg, #eef5f9 0%, #f7fbfd 55%, #eaf2f6 100%);
+}
+
+.admin-form-header {
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+
+.admin-form-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #2f4050;
+}
+
+.admin-form-header p {
+  font-size: 20px;
+  color: #66737f;
+}
+
+.admin-form-card {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-form-card label {
+  color: #2f4050;
+  font-weight: 800;
+}
+
+.admin-form-card input,
+.admin-form-card select {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #d9e2e8;
+  background: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.admin-form-card input:focus,
+.admin-form-card select:focus {
+  border-color: #4f7085;
+}
+
+.admin-form-card button {
+  width: 280px;
+  margin: 12px auto 0;
+}
+
+.form-message {
+  text-align: center;
+  color: #3f5f73;
+  font-weight: 800;
+}

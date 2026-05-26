@@ -1,0 +1,41 @@
+.dashboard-page {
+  min-height: 100vh;
+  padding: 40px 8%;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(91, 127, 151, 0.26), transparent 30%),
+    radial-gradient(circle at 85% 20%, rgba(146, 174, 193, 0.24), transparent 28%),
+    radial-gradient(circle at 70% 85%, rgba(196, 214, 226, 0.34), transparent 35%),
+    linear-gradient(135deg, #eef5f9 0%, #f7fbfd 55%, #eaf2f6 100%);
+}
+
+.dashboard-header {
+  margin-bottom: 50px;
+}
+
+.dashboard-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #2f4050;
+}
+
+.dashboard-header p {
+  font-size: 20px;
+  color: #66737f;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 42px;
+  }
+}

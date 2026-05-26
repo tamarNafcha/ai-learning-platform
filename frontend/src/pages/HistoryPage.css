@@ -1,0 +1,71 @@
+.history-page {
+  min-height: 100vh;
+  padding: 40px 8%;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(91, 127, 151, 0.22), transparent 30%),
+    linear-gradient(135deg, #eef5f9 0%, #f7fbfd 55%, #eaf2f6 100%);
+}
+
+.history-header {
+  margin-bottom: 50px;
+}
+
+.history-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #2f4050;
+}
+
+.history-header p {
+  font-size: 20px;
+  color: #66737f;
+}
+
+.history-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.history-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.history-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(90deg, #4f7085, #9bb8ca);
+}
+
+.history-topic {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: #edf4f8;
+  color: #486377;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.history-card h3 {
+  margin-top: 0;
+  color: #24313d;
+  line-height: 1.6;
+}
+
+.history-card p {
+  color: #5d6c78;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+.empty-history {
+  text-align: center;
+}

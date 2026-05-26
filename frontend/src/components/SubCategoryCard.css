@@ -1,0 +1,44 @@
+.subcategory-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.subcategory-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(90deg, #4f7085, #9bb8ca);
+}
+
+.subcategory-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 45px rgba(36, 49, 61, 0.14);
+}
+
+.subcategory-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: #e8f0f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.subcategory-card h3 {
+  margin: 0 0 12px;
+  color: #24313d;
+  font-size: 24px;
+}
+
+.subcategory-card p {
+  color: #66737f;
+  line-height: 1.7;
+}

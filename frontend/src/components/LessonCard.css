@@ -1,0 +1,60 @@
+.lesson-card {
+  margin: 40px auto 0;
+  max-width: 1100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lesson-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(90deg, #4f7085, #9bb8ca);
+}
+
+.lesson-card h2 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: #24313d;
+  font-size: 30px;
+}
+
+.lesson-content {
+  line-height: 1.9;
+  color: #42515d;
+  font-size: 18px;
+}
+
+.lesson-content h2 {
+  font-size: 28px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: #24313d;
+}
+
+.lesson-content h3 {
+  font-size: 23px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #2f4050;
+}
+
+.lesson-content p {
+  margin-bottom: 18px;
+}
+
+.lesson-content ul {
+  padding-left: 24px;
+  margin-bottom: 22px;
+}
+
+.lesson-content li {
+  margin-bottom: 10px;
+}
+
+.lesson-content strong {
+  color: #24313d;
+}

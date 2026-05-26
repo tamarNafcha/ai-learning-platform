@@ -28,7 +28,7 @@ function App() {
         {/* User */}
         <Route path="/dashboard" element={<UserDashboardPage />} />
         <Route path="/categories/:categoryId" element={<SubCategoriesPage />} />
-        <Route path="/lesson/:subCategoryId" element={<PromptLessonPage />} />
+        <Route path="/lesson/:categoryId/:subCategoryId" element={<PromptLessonPage />} />
         <Route path="/history" element={<HistoryPage />} />
 
         {/* Admin */}

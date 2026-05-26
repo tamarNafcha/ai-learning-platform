@@ -1,0 +1,48 @@
+.admin-list-page {
+  min-height: 100vh;
+  padding: 40px 8%;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(91, 127, 151, 0.24), transparent 30%),
+    linear-gradient(135deg, #eef5f9 0%, #f7fbfd 55%, #eaf2f6 100%);
+}
+
+.admin-list-header {
+  margin-bottom: 40px;
+}
+
+.admin-list-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #2f4050;
+}
+
+.admin-list-header p {
+  font-size: 20px;
+  color: #66737f;
+}
+
+.table-card {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 18px;
+  border-bottom: 1px solid #dde5ea;
+}
+
+th {
+  color: #2f4050;
+  font-size: 16px;
+}
+
+td {
+  color: #5d6c78;
+}
