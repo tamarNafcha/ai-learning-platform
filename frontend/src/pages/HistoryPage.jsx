@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import api from "../services/api";
 import "./HistoryPage.css";
+import ReactMarkdown from "react-markdown";
 
 function HistoryPage() {
   const [history, setHistory] = useState([]);
@@ -10,7 +11,7 @@ function HistoryPage() {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await api.get("/prompts/history");
+        const response = await api.get("/prompts/my-history");
         setHistory(response.data);
       } catch (error) {
         console.log(error);
@@ -56,7 +57,9 @@ function HistoryPage() {
 
               <h3>{item.prompt}</h3>
 
-              <p>{item.response}</p>
+              <div className="history-response">
+                <ReactMarkdown>{item.response}</ReactMarkdown>
+              </div>
 
             </div>
           ))}

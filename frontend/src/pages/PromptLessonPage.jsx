@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import LessonCard from "../components/LessonCard";
+import LoadingSpinner from "../components/LoadingSpinner";
 import { createPrompt } from "../services/promptService";
 import { getAllCategories, getSubCategoriesByCategory } from "../services/categoryService";
 import "./PromptLessonPage.css";
@@ -85,6 +86,7 @@ function PromptLessonPage() {
         <button className="btn btn-primary" disabled={loading}>
           {loading ? "Generating lesson..." : "Generate Lesson"}
         </button>
+        {loading && <LoadingSpinner />}
       </form>
 
       {lesson && <LessonCard lesson={lesson} />}

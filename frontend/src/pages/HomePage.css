@@ -115,3 +115,33 @@
     gap: 20px;
   }
 }
+
+.history-response {
+  color: #5d6c78;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.history-response h2 {
+  color: #24313d;
+  font-size: 25px;
+  margin-top: 22px;
+}
+
+.history-response h3 {
+  color: #2f4050;
+  font-size: 21px;
+  margin-top: 24px;
+}
+
+.history-response p {
+  margin-bottom: 16px;
+}
+
+.history-response li {
+  margin-bottom: 8px;
+}
+
+.history-response strong {
+  color: #24313d;
+}
