@@ -30,6 +30,8 @@ Requirements:
   5. Brief summary
 - Keep the total answer concise and useful.
 - Do not answer unrelated topics.
+- If the user's question is unclear, politely ask them to clarify.
+- If the question is unrelated to the selected category or sub-category, explain briefly that the question should match the selected topic and ask them to try again.
 `,
   });
 
